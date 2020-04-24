@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Common Man</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: linear-gradient(to right, #c33764 , #1d2671);
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-image: linear-gradient(to right, #2193b0 , #6dd5ed);
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-image: linear-gradient(to right, #4568dc , #b06ab3);
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  
+  
+  
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  position:relative;
+  width:1350px;
+  text-align: center;
+  color:white;
+  background-image: linear-gradient(to right, #434343 , #000000);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+ li{
+align:justify;
+font-size:18px;
+}
+
+p{
+font-size:20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Common Man</h1>
+  <p>A blog by <b>Santhosh M</b></p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Decode</a>
+  <a href="#">Travel</a>
+  <a href="#">Food</a>
+  <a href="#" class="right">Videos</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <div class="fakeimg"><img src="shinchan.jpg" height="250px" width="350px";></div>
+    <p>Tell me and I forget. Teach me and I remember. Involve and I learn.</p>
+    <h3>Follow Me</h3>
+    <div class="fakeimg"><a href="https://www.facebook.com/"><img src="fblogo3.png" height="60px" width="50px";></a></div><br>
+	<div class="fakeimg"><a href="https://www.instagram.com/"><img src="instalogo1.png" height="60px" width="50px";></a></div><br>
+  </div>
+  <div class="main">
+    <h2>Into The World 2020</h2>
+    <h3>In attempt to predict the upcoming events of 2020 based on the magazine "The Economist 2020"., Apr 23, 2020.</h3>
+    <div class="fakeimg"><iframe src="https://cdn.shopify.com/s/files/1/0535/3509/products/NA_COVER_2020_512px.jpg?v=1575931789" height="250px" width="450px";></iframe></div>
+    <p>Firts Let us list out the words that are present in the cover page of the magazine along with our own assumption,</p>
+	<ol type="1" id="content">
+	<li><b>Trump</b> - Baba Vanga, the mystic blind woman who predicts many future happenings and she also predicts
+	about the US President Donald Trump.As per her prediction this year 2020 going to be big trouble for the
+	Trump and she also stated that Trump will suffered from brain tumor that would make him deaf and he may die.</li><br>
+	
+	<li><b>Brexit</b> - The United Kingdom withdraws from the European Union on 31 january 2020 but all this things started
+	from the year 2017 and it is one of the pointer of Europe's downfall these things are already predicted by the French
+	astrologer Nostradamus. </li><br>
+	
+	<li><b>AI</b> - As of my knowledge the Artificial Intelligence and Robotic Process Automation had huge dig into several streams such as
+	Medical,Finance,Business,Automobile,Manufacturing Industries compared to other years mainly this COVID-19 Pandemic set the additional 
+	path for this kind of development.For example, The GPT-2 a "large-scale unsupervised language model" predicts more accurate
+	than humans and these type of AI makes the work easier and faster for the research.</li><br>
+	
+	<li><b>Tokyo</b> - We came to know that it directly means the Tokyo Olympics and Paralympic 2020.The first point that came to my mind is that it going 
+	to be the first Robot Assisted Olympics.In detail the Toyota company developed two robots (HSR and DSR) these are the robots going to be used in
+	Tokyo games,but unfortunately the games are postponed due to COVID-19 pandemic.As from the point of Japan they think to use this games as key to 
+	attract other countries towards their Robotic products.</li><br>
+	
+	<li><b>Mars</b> - In 2020 there are three missions to Mars are planned by NASA,each one by both China and UAE.Morely we have to concern that SpaceX and NASA are working
+	together to establish the first colonization on mars than other countries.We can surely expect the more positive findings in the project Mars 2020.</li><br>
+	
+	<li><b>Climate</b> - Again coming back to Baba Vanga and Nostradamus predictions this year 2020 going to face harsh reality of global warming.The year 2020 will 
+	see climate changes affecting the planet and world leaders will begin to work to fight against pollution.Nostradamus predictions include hurricanes,earthquakes
+	and Numerous natural disasters.</li><br>
+
+	<li><b>Xi</b> - <b>Xi Jinping</b> Chinese President,Only country becoming stronger in this pandemic situation they are going to be the masters for entire world 
+	for sometime until we seek some breakthrough in these pandemic situation.But their strategy exposed their own character to the entire world it is not so long for
+	other countries to Exit china.</li><br>
+
+	<li><b>Recession</b> - We all know that entire World Economy is on Great Depression.This recession is the steepest economic downturn since the great depression,we came across many
+	happenings such as Sharp rise in unemployment,2020 stock market crash,Collapse of the tourism industry,Collapse of the hospitality industry,Collapse of the price of oil,
+	Destabilization and collapse of the energy industry,Increase in government debt,Major downturn in consumerism,Market liquidity crisis.</li><br>
+	
+	<li><b>Modi</b> - <b>Narendra Modi</b> The Prime Minister of India,India is the best place for any kind of investment and in this pandemic situation many countires created hate towards china
+	and they are looking for the new marketplace where they can run their business and they are ready to invest any much of money in india.If the Modi utilizes these oppertunites
+	wisely then he will become the more powerful leader and other countries will support India.</li><br>
+	
+	<li><b>Expo</b> - <b>Expo 2020 Dubai</b> will be a celebration of human brilliance and achievement. It will be an opportunity for people to connect from different corners of the world, 
+	to experience the best of art, culture, geography, science, technology, innovation and invention and to set into motion millions of new thoughts and ideas that will make a 
+	lasting impact in our lives.Throughout its history, the UAE has shown the world what is possible through its remarkable development. With Expo 2020 Dubai, Dubai will go a 
+	step further in inspiring the next generation to spark innovations that will underline the next 50 years of human progress.But it is also postponed to 2021 due to COVID-19.</li><br>
+	
+	<li><b>SDGs</b> - The <b>Sustainable Development Goals</b> (SDGs) are a collection of 17 global goals designed to be a "blueprint to achieve a better and more sustainable future for all"
+	But hidden truth is this all directly or indirectly leads to "one world one leardship".Many countries will accept this SDGs in this year 2020.</li><br>
+
+	<li><b>Bond</b> - Yet to find.</li><br>
+	<li><b>Beethoven</b> - Yet to find.</li><br>
+	<li><b>Visions</b> - Yet to find.</li>
+	<li><b>Biodiversity</b> - Yet to find.</li><br>
+	<li><b>Rat</b> - Yet to find.</li><br>
+	<li><b>NPT (Nuclear Non-Proliferation Treaty)</b> - Yet to find.</li><br>
+	<li><b>Warren (Elizabeth?)</b> - Yet to find.</li><br>
+	<li><b>Raphael</b> - Yet to find.</li><br>
+	<li><b>Nightingale (Google’s Project Nightingale?)</b> - Yet to find.</li><br>
+	<li><b>Russia</b> - Yet to find.</li><br>
+	</ol>
+    <p>The entire content of this blog is based on my assumptions,readings and information gathered from different sources.</p>
+    <br>
+   
+</div>
+
+<div class="footer">
+  <h2>Thanks For Visiting&#128077;<p>&copy; 2020 Common Man &#128521<p></h2>
+</div>
+
+</body>
+</html>
